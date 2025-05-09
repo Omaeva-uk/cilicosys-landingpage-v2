@@ -5,6 +5,8 @@ import Image from "next/image";
 import logo from "../../../../public/assets/main-logo.svg";
 import { PrimaryButton } from "..";
 import { useState } from "react";
+import menuOpen from "../../../../public/assets/menu-open.svg";
+import menuClose from "../../../../public/assets/menu-close.svg";
 
 const navItems = [
   {
@@ -59,7 +61,7 @@ const NavBar = () => {
         </div>
         <div className={`md:hidden flex px-7 items-center relative justify-between `}>
           <div className=""><Image src={logo} width={100} height={72} alt="Cilicosys logo" /></div>
-          <div onClick={() => setNavOpen(prev => !prev)} className=" cursor-pointer" >+</div>
+          <div onClick={() => setNavOpen(prev => !prev)} className=" cursor-pointer" ><Image src={!navOpen ? menuOpen : menuClose } width={30} height={30} className="pt-5 opacity-90" alt="Menu icon"/></div>
           <div className={`bg-white text-black text-right font-semibold p-7 absolute top-15 left-0 right-0 ${navOpen ? "block" : "hidden"}`}>
             <ul className=" flex flex-col gap-3">
               {

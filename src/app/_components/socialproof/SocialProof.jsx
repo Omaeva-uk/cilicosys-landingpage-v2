@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const SocialProof = () => {
   return (
-    <div>
+    <div className=" mb-20 xl:mb-40">
       <div className="grid grid-cols-4 justify-items-center gap-7">
         {
           socialProofData.map((item, i) => (
