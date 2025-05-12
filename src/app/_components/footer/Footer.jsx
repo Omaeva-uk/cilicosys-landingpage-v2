@@ -5,7 +5,7 @@ import { footerData } from "../data";
 import linkedinIcon from "../../../../public/assets/footer/linkedin.svg";
 import facebookIcon from "../../../../public/assets/footer/facebook.svg";
 import instaIcon from "../../../../public/assets/footer/insta.svg";
-
+import mainLogo from "../../../../public/assets/main-logo.svg";
 
 
 const navItems = [
@@ -19,20 +19,15 @@ const navItems = [
     item: "About",
     href: "/about",
   },
-  {
-    id: 3,
-    item: "VCloud",
-    href: "/vcloud",
-  },
+  // {
+  //   id: 3,
+  //   item: "VCloud",
+  //   href: "/vcloud",
+  // },
   {
     id: 4,
     item: "Services",
-    href: "/services",
-  },
-  {
-    id: 5,
-    item: "Customers",
-    href: "/customers",
+    href: "/#services",
   },
 ];
 
@@ -41,7 +36,7 @@ const Footer = () => {
     <footer className="bg-darkGrey p-6 md:p-12 pb-0 text-white">
       <div className="flex flex-wrap justify-between ">
         <div>
-          <div><Image src={footerLogo} width={180} height={100} alt="Footer-logo" /></div>
+          <div><Image src={mainLogo} width={180} height={100} alt="Footer-logo" /></div>
           <p className="max-w-xs mt-7">{footerData.address}</p>
           <div className="mt-7">
             <p className="mb-1">{footerData.contactNumber}</p>

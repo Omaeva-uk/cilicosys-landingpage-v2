@@ -3,6 +3,10 @@
 
 @custom-variant dark (&:is(.dark *));
 
+html{
+ scroll-behavior: smooth;
+}
+
 @theme {
   --color-primary: #0094DE;
   --color-primaryLight: #E6F5FC;

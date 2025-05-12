@@ -7,6 +7,7 @@ import { PrimaryButton } from "..";
 import { useState } from "react";
 import menuOpen from "../../../../public/assets/menu-open.svg";
 import menuClose from "../../../../public/assets/menu-close.svg";
+import { usePathname } from "next/navigation";
 
 const navItems = [
   {
@@ -19,20 +20,15 @@ const navItems = [
     item: "About",
     href: "/about",
   },
-  {
-    id: 3,
-    item: "VCloud",
-    href: "/vcloud",
-  },
+  // {
+  //   id: 3,
+  //   item: "VCloud",
+  //   href: "/vcloud",
+  // },
   {
     id: 4,
     item: "Services",
-    href: "/services",
-  },
-  {
-    id: 5,
-    item: "Customers",
-    href: "/customers",
+    href: "/#services",
   },
 ]
 
@@ -40,16 +36,19 @@ const NavBar = () => {
 
   const [navOpen, setNavOpen] = useState(false);
 
+  const pathname = usePathname();
+  //console.log(pathname);
+
 
 
 
   return (
-    <header className='section-container absolute top-0 z-[999] left-0 right-0 p-0 max-w-full px-0'>
+    <header className={`${pathname === "/about" ? 'relative' : 'absolute left-0 right-0 top-0'}'section-container   z-[999]  p-0 max-w-full px-0'`}>
       <nav className="">
         <div className="md:flex justify-between hidden">
-              <div className="px-7 xl:ml-26"><Image src={logo} width={140} height={72} alt="Cilicosys logo" /></div>
+              <a href="/" className="px-7 xl:ml-26"><Image src={logo} width={140} height={72} alt="Cilicosys logo" /></a>
               <div className="flex gap-7 justify-between items-center">
-                <ul className="flex gap-3">
+                <ul className="flex gap-7">
                   {
                     navItems.map(item => (
                       <a key={item.id} href={item.href}><li>{item.item}</li></a>

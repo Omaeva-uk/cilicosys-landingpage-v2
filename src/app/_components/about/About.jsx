@@ -11,7 +11,7 @@ const About = () => {
         <p className="max-w-lg">{aboutData.para}</p>
       </div>
       <div>
-        <div><Image src={aboutData.img} width={500} height={360} className="w-full" alt="about image"/></div>
+        <div className=" relative"><Image src={aboutData.img} width={500} height={360} className="w-full" alt="about image"/><button className="bg-primary absolute bottom-5 left-5 py-2 px-5 text-white rounded-full">Learn more &middot;</button></div>
         <div className="grid grid-cols-2 gap-5 mt-3 justify-items-center">
           {
             aboutData.stats.map(item => (

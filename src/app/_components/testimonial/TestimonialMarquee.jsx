@@ -4,21 +4,21 @@ import { Marquee } from "@/components/magicui/marquee";
 
 const reviews = [
   {
-    name: "Jack",
-    username: "@jack",
-    body: "I've never seen anything like this before. It's amazing. I love it.",
+    name: "John D",
+    username: "@john_d_tech",
+    body: "Cilicosys transformed our IT infrastructure. Truly impressive!",
     img: "https://avatar.vercel.sh/jack",
   },
   {
-    name: "Jill",
-    username: "@jill",
-    body: "I don't know what to say. I'm speechless. This is amazing.",
+    name: "Sophia K.",
+    username: "@sophia_kbiz",
+    body: "Their support team is unmatched. Highly recommend them!",
     img: "https://avatar.vercel.sh/jill",
   },
   {
-    name: "John",
-    username: "@john",
-    body: "I'm at a loss for words. This is amazing. I love it.",
+    name: "Emma W",
+    username: "@emma_infra",
+    body: "We saved time and money thanks to their expertise!",
     img: "https://avatar.vercel.sh/john",
   },
 ];
@@ -42,9 +42,9 @@ const ReviewCard = ({
         "dark:border-gray-50/[.1] dark:bg-gray-50/[.10] dark:hover:bg-gray-50/[.15]",
       )}
     >
-      <div className="flex flex-row mb-3 items-center gap-2">
+      <div className="flex flex-row mb-3 gap-2">
         <img className="rounded-full" width="32" height="32" alt="" src={img} />
-        <div className="flex items-center flex-col">
+        <div className="flex flex-col">
           <figcaption className="text-sm font-medium dark:text-white">
             {name}
           </figcaption>

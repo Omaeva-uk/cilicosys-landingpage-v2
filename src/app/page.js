@@ -7,9 +7,9 @@ export default function Home() {
       <section className="section-container mt-22"><SocialProof /></section>
       <section className="section-container"><About /></section>
       <section className="section-container"><ExcelPara /></section>
-      <section className="section-container"><Services /></section>
+      <section id="services" className="section-container"><Services /></section>
       <section className="section-container"><Testimonial /></section>
-      <section><Cta /></section>
+      <section id="cta"><Cta /></section>
     </div>
   );
 }
