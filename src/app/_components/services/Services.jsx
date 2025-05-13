@@ -17,7 +17,7 @@ const Services = () => {
       <div className='grid grid-cols-1 mt-22 md:grid-cols-2 gap-7'>
         {
           servicesData.map(item => (
-            <a key={item.id} href={item.href} className='max-w-lg h-full'  onMouseEnter={() => setServiceHover(item.id)} onMouseLeave={() => setServiceHover(null)}>
+            <a data-aos="fade-up" key={item.id} href={item.href} className='max-w-lg h-full'  onMouseEnter={() => setServiceHover(item.id)} onMouseLeave={() => setServiceHover(null)}>
               <h3 className=' text-2xl lg:text-3xl font-bold'>{item.serviceName}</h3>
               <p className='mt-3 mb-8 text-gray-600 '>{item.servicePara}</p>
               <div className='h-[1.7px]'>

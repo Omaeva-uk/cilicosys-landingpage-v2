@@ -9,6 +9,7 @@ import Cta from "./cta/Cta";
 import Footer from "./footer/Footer";
 import PrimaryButton from "./primarybutton/PrimaryButton";
 import SectionTag from "./SectionTag";
+import AOSinit from "./AOSinit";
 
 
 
@@ -16,4 +17,4 @@ import SectionTag from "./SectionTag";
 
 
 
-export {NavBar, Hero, SocialProof, About, ExcelPara, Services, Testimonial, Cta, Footer, PrimaryButton, SectionTag};
+export {NavBar, Hero, SocialProof, About, ExcelPara, Services, Testimonial, Cta, Footer, PrimaryButton, SectionTag, AOSinit};
