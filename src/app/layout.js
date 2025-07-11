@@ -2,10 +2,10 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Footer, NavBar } from "./_components";
-
+import NavBar2 from "./_components/navbar/NavBar2";
+import CookieBanner from "./_components/CookieBanner";
 
 const inter = Inter({ subsets: ['latin'] });
-
 
 export const metadata = {
   title: "Cilicosys",
@@ -15,14 +15,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <NavBar />
+      <NavBar2 />
       <body
         className={`${inter.variable} antialiased`}
       >
         <main>
           {children}
         </main>
-        
+        <CookieBanner />
       </body>
       <Footer />
     </html>

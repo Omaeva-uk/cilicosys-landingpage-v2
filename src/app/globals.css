@@ -13,6 +13,15 @@ html{
   --color-darkGrey: #161617;
 }
 
+@layer utilities {
+  input:-webkit-autofill {
+    box-shadow: 0 0 0px 1000px white inset !important;
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+    -webkit-text-fill-color: #000 !important;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
+
 @layer components{
   .section-container{
     @apply max-w-[1300px] mb-12 lg:mb-22 px-7 mx-auto;

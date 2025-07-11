@@ -4,9 +4,9 @@ import { aboutPageData } from '../../data';
 
 const AboutCulture = () => {
   return (
-    <div className='bg-[#151C21] pb-14'>
+    <div className='bg-[#151C21] py-14'>
         <div className='section-container'>
-            <SectionTag text="Our Culture" />
+            {/* <SectionTag text="Our Culture" /> */}
             <div className='mt-12'>
                 {
                     aboutPageData.cultureContent.map(item => (

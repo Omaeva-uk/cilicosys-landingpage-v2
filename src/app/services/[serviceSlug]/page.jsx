@@ -9,7 +9,7 @@ const page = async({params}) => {
     //console.log(service.serviceSlug);
 
     const data = servicesData.find( item => item.slug === service.serviceSlug);
-    console.log(data);
+    // console.log(data);
 
   return (
     <div>

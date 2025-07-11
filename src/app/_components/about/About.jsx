@@ -7,11 +7,11 @@ const About = () => {
     <div className="grid grid-cols-1 md:grid-cols-2 justify-between gap-7">
       <div data-aos="fade-right">
         <SectionTag text="Who are we" />
-        <h2 className="text-3xl md:text-5xl mt-10 mb-7 font-bold max-w-md">{aboutData.heading}</h2>
+        <h2 className="text-3xl md:text-5xl mt-10 mb-7 font max-w-md">{aboutData.heading}</h2>
         <p className="max-w-lg">{aboutData.para}</p>
       </div>
       <div data-aos="fade-left">
-        <div className=" relative"><Image src={aboutData.img} width={500} height={360} className="w-full" alt="about image"/><button className="bg-primary absolute bottom-5 left-5 py-2 px-5 text-white rounded-full">Learn more &middot;</button></div>
+        <div className=" relative"><Image src={aboutData.img} width={500} height={360} className="w-full" alt="about image"/><a href="/about" className="bg-primary absolute bottom-5 left-5 py-2 px-5 text-white rounded-full">Learn more &middot;</a></div>
         <div className="grid grid-cols-2 gap-5 mt-3 justify-items-center">
           {
             aboutData.stats.map(item => (

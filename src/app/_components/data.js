@@ -13,6 +13,15 @@ const socialProofData = [
     "/assets/social-proof-section/sp-6.png",
     "/assets/social-proof-section/sp-7.png",
     "/assets/social-proof-section/sp-8.png",
+    "/assets/social-proof-section/sp-10.png",
+    "/assets/social-proof-section/sp-11.png",
+    "/assets/social-proof-section/sp-12.png",
+    "/assets/social-proof-section/sp-13.png",
+    "/assets/social-proof-section/sp-14.png",
+    "/assets/social-proof-section/sp-15.png",
+    "/assets/social-proof-section/sp-16.png",
+    "/assets/social-proof-section/sp-17.png",
+    "/assets/social-proof-section/sp-18.png"
 ];
 
 const aboutData = {
@@ -35,54 +44,60 @@ const aboutData = {
 
 
 const servicesData = [
-    {
-    id: 1,
-    slug: "virtual-machine-service",
-    href: "/services/virtual-machine-service",
-    serviceName: "Virtual Machine",
-    servicePara: "Virtual machines will be a substitute for a real machine which is hosted in our datacentre. The virtual machines are served from the VCloud environment.",
-    },
-    {
-        id: 2,
-        slug: "azure-management",
-        href: "/services/azure-management",
-        serviceName: "Azure Management",
-        servicePara: "You don’t need to spend your time building the cloud infrastructure. Cilicosys' expertise in managing Azure cloud infrastructure will help you achieve your business goals seamlessly.",
-    },
-    {
-        id: 3,
-        slug: "email-service",
-        href: "/services/email-service",
-        serviceName: "Email Service",
-        servicePara: "VMail services offer you a reliable email communication system with IMAP & POP3 features, filtered through Microsoft Online services to ensure the best communication experience.",
-    },
-    {
-        id: 4,
-        slug: "data-center-service",
-        href: "/services/data-center-service",
-        serviceName: "Data Center Service",
-        servicePara: "Many organizations believe hosting their application in their environment is better. However, managing the infrastructure was a painful activity as they spend up to 40% of their time with it.",
-    },
-    {
-        id: 5,
-        slug: "aws-management",
-        href: "/services/aws-management",
-        serviceName: "AWS Management",
-        servicePara: "Cilicosys has the requisite manpower and expertise to fulfill your AWS cloud needs. You don’t need to spend your time building the cloud infrastructure as we handle it all for you.",
-    },
-    {
-        id: 6,
-        slug: "it-infrastructure-support",
-        href: "/services/it-infrastructure-support",
-        serviceName: "IT Infrastructure Support",
-        servicePara: "It is one of our core business activities which we perform with many of our clients. This was a painful activity for our customers, Cilicosys spends time and money to simplify our IT processes.",
-    },
-
+  {
+    "id": 1,
+    "slug": "core-it-infrastructure-services",
+    "href": "/services/core-it-infrastructure-services",
+    "serviceName": "Core IT Infra Services",
+    "servicePara": "Cilicosys delivers secure, scalable infrastructure with optimized networking and server management for high performance across fast-moving enterprise environments."
+  },
+  {
+    "id": 2,
+    "slug": "data-center-management",
+    "href": "/services/data-center-management",
+    "serviceName": "Data Center Management",
+    "servicePara": "Cilicosys optimizes data center reliability, virtualization, and fault-tolerant systems—boosting efficiency and uptime for businesses of all sizes."
+  },
+  {
+    "id": 3,
+    "slug": "cloud-and-devops-solutions",
+    "href": "/services/cloud-and-devops-solutions",
+    "serviceName": "Cloud & DevOps Solutions",
+    "servicePara": "Cilicosys enables agile cloud deployment with CI/CD automation across AWS and Azure, ensuring resilient systems and faster innovation at scale."
+  },
+  {
+    "id": 4,
+    "slug": "it-consulting-services",
+    "href": "/services/it-consulting-services",
+    "serviceName": "IT Consulting Services",
+    "servicePara": "Cilicosys offers strategic consulting to align IT with growth goals—empowering businesses through smarter tech decisions and optimized workflows."
+  },
+  {
+    "id": 5,
+    "slug": "advanced-cyber-defence",
+    "href": "/services/advanced-cyber-defence",
+    "serviceName": "Advanced Cyber Defence",
+    "servicePara": "Cilicosys defends businesses with proactive cybersecurity, real-time threat monitoring, and compliance-driven protection against digital risks."
+  },
+  {
+    "id": 6,
+    "slug": "it-procurement-services",
+    "href": "/services/it-procurement-services",
+    "serviceName": "IT Procurement Services",
+    "servicePara": "Cilicosys streamlines IT procurement—optimizing vendor selection, licensing, and ROI through cost-effective and scalable technology sourcing."
+  },
+  {
+    "id": 7,
+    "slug": "hosting-services",
+    "href": "/services/hosting-services",
+    "serviceName": "Hosting Services",
+    "servicePara": "Cilicosys provides secure hosting with fast load speeds, reliable uptime, and scalable environments for websites, apps, and cloud platforms."
+  },
 ];
 
 
 const testimonialData = {
-    heaidng: "Trusted by over 1000 companies worldwide!",
+    heaidng: "Trusted by over 100+ companies worldwide!",
     para: "We are more than an IT consultancy; we are a partner committed to excellence. Our success is deeply connected with the growth and achievements of the businesses we proudly serve."
 
 }

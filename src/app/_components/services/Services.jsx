@@ -8,7 +8,7 @@ const Services = () => {
 
   const [serviceHover, setServiceHover] = useState(null);
 
-  console.log(serviceHover);
+  console.log(servicesData);
 
   return (
     <div className='mb-40'>
@@ -18,7 +18,7 @@ const Services = () => {
         {
           servicesData.map(item => (
             <a data-aos="fade-up" key={item.id} href={item.href} className='max-w-lg h-full'  onMouseEnter={() => setServiceHover(item.id)} onMouseLeave={() => setServiceHover(null)}>
-              <h3 className=' text-2xl lg:text-3xl font-bold'>{item.serviceName}</h3>
+              <h3 className=' text-2xl lg:text-3xl font'>{item.serviceName}</h3>
               <p className='mt-3 mb-8 text-gray-600 '>{item.servicePara}</p>
               <div className='h-[1.7px]'>
                 <div className={`${serviceHover === item.id ? 'block' : 'hidden'} h-[1.5px] bg-primary`}></div>

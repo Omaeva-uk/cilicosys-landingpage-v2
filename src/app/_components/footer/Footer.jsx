@@ -6,6 +6,7 @@ import linkedinIcon from "../../../../public/assets/footer/linkedin.svg";
 import facebookIcon from "../../../../public/assets/footer/facebook.svg";
 import instaIcon from "../../../../public/assets/footer/insta.svg";
 import mainLogo from "../../../../public/assets/main-logo.svg";
+import Link from "next/link";
 
 
 const navItems = [
@@ -68,7 +69,8 @@ const Footer = () => {
       <div className="h-[1px] mt-12 bg-white/30 w-full"></div>
       <div className="flex pb-3 gap-7 text-xs sm:text-sm text-white/30 justify-between mt-3">
         <p>©Cilicosys. All Rights Reserved.</p>
-        <p>Designed and developed by Omaeva Ltd</p>
+        <p>Designed and developed by <Link href='https://omaeva.com/'>Omaeva Ltd</Link></p>
+        <Link href='/privacy-policy'>Privacy Policy</Link>
       </div>
     </footer>
   )

@@ -1,0 +1,98 @@
+.privacy-policy-bg {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e3f0ff 0%, #f8fafc 100%);
+    padding: 0 0.5rem;
+}
+
+.privacy-policy {
+    max-width: 900px;
+    margin: 80px auto 40px auto;
+    background: #fff;
+    border-radius: 22px;
+    box-shadow: 0 8px 32px rgba(30, 64, 175, 0.10), 0 1.5px 6px rgba(0,0,0,0.04);
+    border: 1.5px solid #e3e8f0;
+    padding: 2.8rem 2.2rem 2.2rem 2.2rem;
+    font-family: 'Inter', Arial, sans-serif;
+    color: #1a202c;
+    line-height: 1.75;
+    position: relative;
+}
+
+.privacy-policy-intro {
+    background: linear-gradient(90deg, #e3f0ff 0%, #f8fafc 100%);
+    border-radius: 16px;
+    padding: 1.2rem 1.5rem;
+    margin-bottom: 2.2rem;
+    box-shadow: 0 2px 8px rgba(30, 64, 175, 0.04);
+}
+
+.privacy-policy h1 {
+    font-size: 2.1rem;
+    font-weight: 800;
+    margin-bottom: 0.7rem;
+    color: #1a237e;
+    letter-spacing: -1px;
+}
+
+.privacy-policy h2 {
+    font-size: 1.35rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    color: #1976d2;
+    border-left: 4px solid #e3f0ff;
+    padding-left: 0.7rem;
+    background: #f8fafc;
+    border-radius: 6px;
+}
+
+.privacy-policy p {
+    margin-bottom: 1.2rem;
+    font-size: 1.08rem;
+}
+
+.privacy-policy ul {
+    margin-bottom: 1.2rem;
+    padding-left: 1.5rem;
+    list-style: disc inside;
+}
+
+.privacy-policy li {
+    margin-bottom: 0.7rem;
+    font-size: 1.08rem;
+    padding-left: 0.2rem;
+}
+
+.privacy-policy a {
+    color: #1976d2;
+    text-decoration: underline;
+    word-break: break-all;
+    transition: color 0.2s;
+}
+.privacy-policy a:hover {
+    color: #0d47a1;
+    text-decoration: underline wavy;
+}
+
+.privacy-policy section {
+    margin-bottom: 2.2rem;
+}
+
+@media (max-width: 700px) {
+    .privacy-policy {
+        padding: 1.2rem 0.5rem;
+        margin: 40px 0 0 0;
+        border-radius: 12px;
+    }
+    .privacy-policy h1 {
+        font-size: 1.3rem;
+    }
+    .privacy-policy h2 {
+        font-size: 1.05rem;
+        padding-left: 0.4rem;
+    }
+    .privacy-policy-intro {
+        padding: 0.7rem 0.7rem;
+        font-size: 0.98rem;
+    }
+}
